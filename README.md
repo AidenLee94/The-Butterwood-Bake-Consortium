@@ -2,4 +2,4 @@
 The Butterwood Bake Consortium Website
 
 
-Click index.html to look at the website!
+In the directory, double click index.html file to look at the website!
