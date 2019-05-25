@@ -1,0 +1,230 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Aiden Lee">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, website">
+	<meta name="description" content="ButterWood Bake Consortium Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>
+	<link rel="icon" href="images/icon.gif" type="image/gif" sizes="18x18">
+
+	<!-- External Links to CSS files-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+
+	<!-- External Links to JS files-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script type="text/javascript">
+
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+	<script type="text/javascript">
+	$(function () {
+		    $('#container-graph').highcharts({
+
+		        chart: {
+			        plotBackgroundColor: null,
+			        plotBorderWidth: null,
+			        plotShadow: false,
+			        type: 'pie'
+			    },
+			    title: {
+			        text: 'Popular times - Wed–Fri 12PM - 11PM (avg per day)'
+			    },
+			    tooltip: {
+			        pointFormat: '{series.name}: <b>{point.y} people </b>'
+			    },
+			    plotOptions: {
+			        pie: {
+			            allowPointSelect: true,
+			            cursor: 'pointer',
+			            dataLabels: {
+			                enabled: true,
+			                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+			                style: {
+			                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+			                },
+			                connectorColor: 'silver'
+			            }
+			        }
+			    },
+			    series: [{
+			        name: 'The number of average customers',
+			        data: [
+			            { name: '12 PM', y: 10 },
+			            { name: '1 PM', y: 8 },
+			            { name: '2 PM', y: 24 },
+			            { name: '3 PM', y: 5 },
+			            { name: '4 PM', y: 7 },
+			            { name: '5 PM', y: 32 },
+			            { name: '6 PM', y: 16 },
+			            { name: '7 PM', y: 18 },
+			            { name: '8 PM', y: 27 },
+			            { name: '9 PM', y: 39 },
+			            { name: '10 PM', y: 32 },
+			            { name: '11 PM', y: 22 }
+			        ]
+			    }]
+
+		    });
+		});
+		</script>
+
+
+		<script type="text/javascript">
+	$(function () {
+		    $('#container-graph2').highcharts({
+
+		        chart: {
+			        plotBackgroundColor: null,
+			        plotBorderWidth: null,
+			        plotShadow: false,
+			        type: 'pie'
+			    },
+			    title: {
+			        text: 'Popular times - Sat and Sun (avg per day)'
+			    },
+			    tooltip: {
+			        pointFormat: '{series.name}: <b>{point.y} people </b>'
+			    },
+			    plotOptions: {
+			        pie: {
+			            allowPointSelect: true,
+			            cursor: 'pointer',
+			            dataLabels: {
+			                enabled: true,
+			                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+			                style: {
+			                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+			                },
+			                connectorColor: 'silver'
+			            }
+			        }
+			    },
+			    series: [{
+			        name: 'The number of average customers',
+			        data: [
+			            { name: '10 AM', y: 30 },
+			            { name: '11 AM', y: 33 },
+			            { name: '12 PM', y: 50 },
+			            { name: '1 PM', y: 48 },
+			            { name: '2 PM', y: 25 },
+			            { name: '3 PM', y: 28 },
+			            { name: '4 PM', y: 27 },
+			            { name: '5 PM', y: 24 },
+			            { name: '6 PM', y: 46 },
+			            { name: '7 PM', y: 66 },
+			            { name: '8 PM', y: 73 },
+			            { name: '9 PM', y: 70 }
+			        ]
+			    }]
+
+		    });
+		});
+		</script>
+
+
+
+
+<script>
+$(function(){
+	$("#tabs").tabs({
+		event: "mouseover"
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+	<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is new tag in HTML 5 -->
+				<h1>Butterwood Bake Consortium</h1>
+			</header>
+			<nav>
+			    <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links -->
+			    <a href="menus.html">Menus & Orders</a>
+			    <a href="special_order.html">Special Order</a>
+			    <a href="special.html">Special Events</a>
+			    <a class="selected" href="hour.html">Hours & Locations</a>
+			    <a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+
+<div id="content">
+
+	<h3>Information</h3>
+	  <table>
+			<tr>
+		    <th colspan="5">Contact Information</th>
+		  </tr>
+			<tr>
+			  <th>Address</th>
+			  <th>Phone Number</th>
+			  <th>Email Address</th>
+			  <th>Website</th>
+			  <th>Photo</th>
+		  </tr>
+		  <tr>
+			  <td>5222 Butler St,<br> Pittsburgh, <br> PA 15201</td>
+			  <td>412-781-0218</td>
+			  <td><a href="mailto:info@thebutterwood.com">
+			  	info@thebutterwood.com</a></td>
+			  <td>
+			  	<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank">https://www.thebutterwoodbakeconsortium.com</a></td>
+              <td><img src="images/table.png" alt="" border=2 height=100 width=100></img></td>
+
+		  </tr>
+
+	  </table>
+
+	  <h3>Hours</h3>
+	  <p>Wed–Fri: 12PM - 11PM <br>
+		Sat: 10AM - 11PM <br>
+		Sun: 10AM - 9PM </p><br>
+
+		<h3>Location</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.7449133339373!2d-79.95592068467798!3d40.480907979357696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2f80929711b%3A0x169402af50d86e6c!2sThe+Butterwood+Bake+Consortium!5e0!3m2!1sen!2sus!4v1553468070382" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+     <br><br>
+
+	 <h3>Popular Times</h3>
+
+	  <div id="container-graph" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+		<br><br>
+		<div id="container-graph2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+	</div> <!-- Close content -->
+
+
+	<footer>
+		<a href="mailto:infoneeded@butterwoodBC.com"><img src="images/gmail.png"></a>
+		<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank"><img src="images/internet.png" /></a>
+		<a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png" /></a>
+		<a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png" /></a>
+		<a href="https://www.pittsburghmagazine.com/Best-of-the-Burgh-Blogs/Eat-Street/November-2015/Butterwood-Bake-Consortium-Takes-the-Cake" target="_blank"><img src="images/article.png" /></a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div>
+</body>
+
+</html>

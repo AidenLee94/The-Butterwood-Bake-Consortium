@@ -1,0 +1,83 @@
+/* CSS Document */
+/* Mobile Styles */
+
+/* All the CSS code is in the media query for screens that are smaller than 480px */
+@media screen and (max-width: 480px) {
+   
+    body {
+		font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+		background-color: #faf7f3; /* Change background color to a light tan */
+    }
+	
+	#container {
+		width: 100%; /* Changes width to 100% instead of 70% */
+		margin: 1em auto; /* Sets 1em instead of 10px to the top and the the browser will center with auto */
+	}
+
+	#top_row h1 {
+		/*color: #2a1d1c;  Dark red/black color for header */
+		font-size: 2em; /* Reduce font size */
+		color: #af1d3c; /* Purple color for header */
+		letter-spacing: 1px; /* The letter-spacing property increases or decreases the space between characters in a text. */
+		text-align: left;
+	}
+
+	.slideshow-container {
+		display: none;
+	}
+
+	.dot {
+		display: none;
+	}
+
+
+
+	#top_row h3 {
+		font-size: 1em; /* Reduce font size */
+	}
+	
+	#top_row nav {
+		font-size: 0.9em; /* Reduce font size */
+	}
+	
+	#content {
+		float: right;
+		width: 100%; /* Change width to 100% */
+		margin: 0;
+		padding: 1em; /* Reduce padding */
+		border-right: none;
+	}
+
+	#content h3 {
+		font-size: 1.25em; /* Reduce font size */
+		margin: 0; /* Remove margin */
+	}
+
+	#content img {
+		display: none; /* Don't include image in mobile view */
+	}
+
+	#bio {
+		margin-left: 0em; /* Remove margin */
+		font-size: .875em; /* Reduce font size */
+		display: none;
+	}
+
+	#bio a {
+		border-bottom: none; /* Remove underline effect */
+	}
+
+	#sidebar {
+		float: left; /* Put sidebard at bottom (instead of side) */
+		padding: 0em; /* Remove padding */
+		font-size: .875em; /* Reduce font size */
+		border: none; /* Remove border */
+	}
+
+	#sidebar h3 {
+		font-size: 1.25em; /* Reduce font size */
+		margin: 0; /* Remove margin */
+		border: none; /* Remove underline of heading */
+	}
+
+} /* Close media query */

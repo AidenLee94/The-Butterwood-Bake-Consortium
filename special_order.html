@@ -1,0 +1,179 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Aiden Lee">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, website">
+	<meta name="description" content="ButterWood Bake Consortium Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>
+	<link rel="icon" href="images/icon.gif" type="image/gif" sizes="18x18">
+
+
+	<!-- External Links to CSS files-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+
+	<!-- External Links to JS files-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+<script>
+$(function(){
+	$("#accordion").accordion();
+});
+</script>
+
+<script>
+$(function(){
+	$("#tabs").tabs({
+		event: "mouseover"
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+	<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is new tag in HTML 5 -->
+				<h1>Butterwood Bake Consortium</h1>
+			</header>
+			<nav>
+			    <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links -->
+			    <a href="menus.html">Menus & Orders</a>
+			    <a class="selected" href="special_order.html">Special Orders</a>
+			    <a href="special.html">Special Events</a>
+			    <a href="hour.html">Hours & Locations</a>
+			    <a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+
+<div id="content">
+
+	<h3>Special Orders</h3>
+
+	<div id="tabs">
+
+		<ul>
+		<li><a href="#tabs-1">Whole Pies: $35-45</a></li>
+		</ul>
+
+		<div id="tabs-1">
+			<p>
+		 	Apple<br>Pumpkin<br>
+			Butternut Squash<br>Sweet Potato<br>
+			Mango<br> Butterscotch<br>
+			Coconut Cream<br>Pecan<br>
+			Chocolate Cream<br>Banana Cream<br>
+			Vanilla Custard
+			</p>
+		</div>
+
+	</div>
+
+
+		<h3>Custom Order</h3>
+	<p>Please note: We require at least 3 business days notice for cake orders.
+  Your order is not official until you have received email or phone confirmation from us.</p>
+	<form action="mailto:infoneeded@butterwoodBC.com" method="post" enctype="text/plain" border= none>
+	  <fieldset>
+		  <!-- <legend>Tell me more about yourself</legend> -->
+		  <label for="last_name">Last Name: *</label> <br/>
+		  <input type="text" id="last_name" name="last_name" size="20" maxlength ="250" required><br/><br/>
+
+		  <label for="first_name">First Name: *</label> <br/>
+		  <input type="text" id="first_name" name="first_name" size="20" maxlength ="250" required><br/><br/>
+
+		<label for="address">Address: *</label> <br/>
+		<textarea id="message" id="address" name="address" rows = "5" cols = "20" size="20" maxlength ="500" required> </textarea><br/><br/>
+
+		  <label for="email">Email: *</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+
+
+		 <label for="phone">Phone Number:</label> <br/>
+		  <input type="text" id="phone" name = "phone" Placeholder = "123-456-7890" size="13" maxlength="12"> <br/><br/>
+
+		  <label for="quantity">Quantity of Pies: </label><br/>
+			<select id="quantity">
+			    <option value="">--Please choose an option--</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			    <option value="6">6</option>
+			    <option value="7">7</option>
+			    <option value="8">8</option>
+			    <option value="9">9</option>
+			    <option value="10">10</option>
+			</select><br/><br/>
+
+	  	  <label for="type_pie">Type of Pie: </label><br/>
+			<select multiple id = "type_pie">
+			    <option value="">--Please choose an option--</option>
+			    <option value="apple">Apple</option>
+			    <option value="pumpkin">Pumpkin</option>
+			    <option value="butter">Butternut Squash</option>
+			    <option value="sweet_potatio">Sweet Potato</option>
+			    <option value="mango">Mango</option>
+			    <option value="butterscotch">Butterscotch</option>
+			    <option value="coconut_cream">Coconut Cream</option>
+			    <option value="pecan">Pecan</option>
+			    <option value="chocolate_cream">Chocolate Cream</option>
+			    <option value="banana">Banana Cream</option>
+			    <option value="vanila">Vanilla Custard</option>
+			</select><br/><br/>
+
+		 <label for="pickup_date">Pickup Date:</label> <br/>
+		  <input type="date" id="pickup_date" name = "pickup_date"> <br/><br/>
+
+
+		 <label for="pickup_time">Pickup Time:</label> <br/>
+		  <input type="time" id="pickup_time" name = "pickup_time"> <br/><br/>
+
+
+	  </fieldset>
+  	  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Send">
+	  </form>
+
+
+
+	</div> <!-- Close content -->
+
+	<div id="sidebar">
+	<br><br>
+
+	 <iframe width="520" height="350"
+		src="https://www.youtube.com/embed/TBuPgbnMbtA?autoplay=1">
+	</iframe>
+
+
+	</div> <!--Close sidebar  -->
+
+	<footer>
+		<a href="mailto:infoneeded@butterwoodBC.com"><img src="images/gmail.png"></a>
+		<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank"><img src="images/internet.png" /></a>
+		<a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png" /></a>
+		<a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png" /></a>
+		<a href="https://www.pittsburghmagazine.com/Best-of-the-Burgh-Blogs/Eat-Street/November-2015/Butterwood-Bake-Consortium-Takes-the-Cake" target="_blank"><img src="images/article.png" /></a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div>
+</body>
+
+</html>

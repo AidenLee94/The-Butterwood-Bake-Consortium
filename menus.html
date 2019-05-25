@@ -1,0 +1,169 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Aiden Lee">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, website">
+	<meta name="description" content="ButterWood Bake Consortium Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>
+	<link rel="icon" href="images/icon.gif" type="image/gif" sizes="18x18">
+
+
+	<!-- External Links to CSS files-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+
+	<!-- External Links to JS files-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+<script>
+$(function(){
+	$("#accordion").accordion();
+});
+</script>
+
+<script>
+$(function(){
+	$("#tabs").tabs({
+		event: "mouseover"
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+	<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is new tag in HTML 5 -->
+				<h1>Butterwood Bake Consortium</h1>
+			</header>
+			<nav>
+			    <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links -->
+			    <a class="selected" href="menus.html">Menus & Orders</a>
+			    <a href="special_order.html">Special Order</a>
+			    <a href="special.html">Special Events</a>
+			    <a href="hour.html">Hours & Locations</a>
+			    <a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+
+<div id="content">
+
+	<h3>Menus</h3>
+
+	<div id="tabs">
+
+		<ul>
+		<li><a href="#tabs-1">Cake Base</a></li>
+		<li><a href="#tabs-2">Cake Flavors</a></li>
+		<li><a href="#tabs-3">Buttercream</a></li>
+		<li><a href="#tabs-4">Whole Pies: $35-45</a></li>
+
+		</ul>
+		<div id="tabs-1">
+			<p>
+				Olive Oil</br>
+				Vegan</br>
+			</p>
+		</div>
+
+		<div id="tabs-2">
+		Chocolate</br>Chocolate Sweet Potato</br>Chocolate Beet</br>Chocolate Cinnamon</br>
+		Espresso</br>Vanilla Olive Oil</br>Lavender</br>Lemon</br>Rose</br>Poppy Seed</br>
+		Black Sesame</br>Clementine</br>Blood Orange</br>Pumpkin</br>Pear Spice</br>
+		Apple Spice</br>Banana Spice</br>Sweet Potato Spice</br>Cinnamon</br>Butternut Squash</br>
+		Matcha Green Tea</br>Coconut</br>Carrot Spice</br>Turmeric</br>Pecan</br>
+		Almond</br>Rosemary</br>Fig (seasonal)</br>Peanut Butter</br>Berry</br>
+		Berry Basil</br>Elderflower</br>Creme De Violette
+			</p>
+		</div>
+
+		<div id="tabs-3">
+			<p>
+			Vanilla</br>
+			Vanilla Mascarpone</br>Chocolate</br>Chocolate Cinnamon</br>Mocha</br>
+			Espresso</br>Cinnamon Mocha</br>Cinnamon Espresso</br>Tahini</br>
+			Peanut Butter</br>Pistachio</br>Salted Almond</br>Cashew</br>
+			Black Sesame</br>Matcha</br>Fresh Mint</br>Berry (Assorted)</br>
+			Basil</br>Maple</br>Honey
+			</p>
+		</div>
+
+		<div id="tabs-4">
+			<p>
+		 	Apple</br>Pumpkin</br>
+			Butternut Squash</br>Sweet Potato</br>
+			Mango</br> Butterscotch</br>
+			Coconut Cream</br>Pecan</br>
+			Chocolate Cream</br>   Banana Cream</br>
+			Vanilla Custard
+			</p>
+		</div>
+
+	</div>
+
+
+		<h3>Custom Order</h3>
+	<p>Please note: We require at least 3 business days notice for cake orders.
+  Your order is not official until you have received email or phone confirmation from us.</p>
+	<form action="mailto:infoneeded@butterwoodBC.com" method="post" enctype="text/plain" border= none>
+	  <fieldset>
+		  <!-- <legend>Tell me more about yourself</legend> -->
+		  <label for="uname">Name: *</label> <br/>
+		  <input type="text" id="uname" name="uname" size="20" maxlength ="250" required><br/><br/>
+
+		  <label for="email">Email: *</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+
+	      <label fr="subject">Subject: *</label> <br/>
+		<input type="text" id="subject" name="subject" size="20" maxlength ="250" required><br/><br/>
+
+		 <label fr="message">Message:</label> <br/>
+		  <textarea id="message" name="message" value="Type your Message" rows="10" cols="30" maxlength="500"> </textarea><br/><br/>
+
+
+	  </fieldset>
+	  	  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Send">
+	  </form>
+
+
+
+	</div> <!-- Close content -->
+
+	<div id="sidebar">
+	<br><br>
+
+	 <iframe width="520" height="350"
+		src="https://www.youtube.com/embed/TBuPgbnMbtA?autoplay=1">
+	</iframe>
+
+
+	</div> <!--Close sidebar  -->
+
+	<footer>
+		<a href="mailto:infoneeded@butterwoodBC.com"><img src="images/gmail.png"></a>
+		<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank"><img src="images/internet.png" /></a>
+		<a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png" /></a>
+		<a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png" /></a>
+		<a href="https://www.pittsburghmagazine.com/Best-of-the-Burgh-Blogs/Eat-Street/November-2015/Butterwood-Bake-Consortium-Takes-the-Cake" target="_blank"><img src="images/article.png" /></a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div>
+</body>
+
+</html>

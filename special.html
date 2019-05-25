@@ -1,0 +1,183 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Aiden Lee">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, website">
+	<meta name="description" content="ButterWood Bake Consortium Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>
+	<link rel="icon" href="images/icon.gif" type="image/gif" sizes="18x18">
+
+
+	<!-- External Links to CSS files-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+
+	<!-- External Links to JS files-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+<script>
+$(function(){
+	$("#accordion").accordion();
+});
+</script>
+
+<script>
+$(function(){
+	$("#tabs").tabs({
+		event: "mouseover"
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+
+	<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is new tag in HTML 5 -->
+				<h1>Butterwood Bake Consortium</h1>
+			</header>
+			<nav>
+			    <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links -->
+			    <a href="menus.html">Menus & Orders</a>
+			    <a href="special_order.html">Special Order</a>
+			    <a class="selected" href="special.html">Special Events</a>
+			    <a href="hour.html">Hours & Locations</a>
+			    <a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+
+
+
+	<div id="content">
+		<h3>Special Events</h3>
+
+
+		<div id="tabs">
+		<ul>
+		<li><a href="#tabs-1">Weddings</a></li>
+		<li><a href="#tabs-2">Celebrations</a></li>
+		<li><a href="#tabs-3">Holidays</a></li>
+		</ul>
+		<div id="tabs-1">
+			 <img src="images/event1.jpg" alt="event1" class="responsive" />
+			<p>
+				Weddings are such a joyous occasion and each one is different!
+				The same is true of our wedding cakes.
+				We have an almost unlimited combination of flavors and styles to choose from.
+				<br><br>
+				Batters and fillings:<br>
+				Our most popular batter is yellow, but we also offer red velvet,
+				chocolate, marble, and others upon request. As for fillings,
+				we recommend white buttercream icing, chocolate fudge icing,
+				strawberry crème filling, vanilla pastry cream, or one of
+				several fruit fillings (lemon, raspberry, apricot, strawberry, etc.).
+				That being said, if you have something special in mind it can’t hurt to ask!
+				<br><br>
+				Sizes:<br>
+				To keep proportionality and maintain structure,
+				wedding cakes come in certain sizes with certain tier
+				dimensions. If the size of the wedding party falls in
+				between cake sizes, we can offer additional sheet cakes up to the amount of slices required.
+				<br><br>
+				Pricing:<br>
+				Our wedding cakes vary in price, depending on type, size,
+				and “extras” such as special fillings, pillars, etc.
+				For example, the cakes seen above are in the $3.25 – $3.75 per serving range.
+				<br><br>
+				Other delicacies:<br>
+				Our wedding cakes are really just the beginning.
+				Lots of folks opt for Individual desserts (3” mini-cakes,
+				cupcakes, etc.) and of course there’s always room in the
+				celebration for Cookie Trays, Monogrammed Petit Fours,
+				Junior Pastry Trays, Grooms’ Cakes, Shower Cakes,
+				Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.
+				<br><br>
+				Delivery:<br>
+				We co-ordinate with the reception venue, florist, etc.
+				for the timing of the delivery of the cake. Delivery
+				fees vary by location. Smaller cakes can be packed by us
+				to facilitate pick-up at the bakery.
+
+
+			</p>
+		</div>
+
+		<div id="tabs-2">
+			<img src="images/event2.jpg" alt="event2" class="responsive" />
+			<p>
+				Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com.
+				<br><br>
+				Sizes:<br>
+				We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full.
+				<br><br>
+				Pricing:<br>
+				Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations.
+				<br><br>
+				Delivery:<br>
+				Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.
+
+			</p>
+		</div>
+
+		<div id="tabs-3">
+			<img src="images/event3.jpg" alt="event3" class="responsive" />
+			<p>
+				From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras,
+				we have cakes for your favorite occasions!
+				<br><br>
+				Easter is right around the corner. Check out our baked goods that are perfect for your fun,
+				colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.
+			</p>
+		</div>
+
+		</div>
+
+
+
+	</div> <!-- Close content -->
+
+	<div id="sidebar">
+		<br><br>
+		<img src="images/logo.jpeg" alt="Logo" class="responsive" />
+		 <br>
+		 <img src="images/event4.jpg" alt="Smiley face" class="responsive" />
+		 <p>
+		 Curabitur condimentum justo libero. Nunc pretium rutrum lacus,
+		 vitae suscipit erat condimentum ac. Suspendisse euismod leo vitae tempus
+		 consectetur. Integer tellus massa, hendrerit ac tellus ut, feugiat
+		 tristique mi. Donec dictum, urna eu dapibus dapibus, ex nisl
+		 maximus tellus, vel pharetra lacus enim eget augue. Quisque vitae
+		 venenatis ipsum. Duis a efficitur massa.</p>
+
+	</div> <!--Close sidebar  -->
+
+
+	<footer>
+		<a href="mailto:infoneeded@butterwoodBC.com"><img src="images/gmail.png"></a>
+		<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank"><img src="images/internet.png" /></a>
+		<a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png" /></a>
+		<a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png" /></a>
+		<a href="https://www.pittsburghmagazine.com/Best-of-the-Burgh-Blogs/Eat-Street/November-2015/Butterwood-Bake-Consortium-Takes-the-Cake" target="_blank"><img src="images/article.png" /></a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div>
+</body>
+
+</html>

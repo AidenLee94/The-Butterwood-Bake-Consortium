@@ -1,0 +1,118 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Aiden Lee">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, website">
+	<meta name="description" content="ButterWood Bake Consortium Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>
+	<link rel="icon" href="images/icon.gif" type="image/gif" sizes="18x18">
+
+	<!-- External Links to CSS files-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+
+	<!-- External Links to JS files-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is new tag in HTML 5 -->
+				<h1>Butterwood Bake Consortium</h1>
+			</header>
+			<nav>
+			    <a href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links -->
+			    <a href="menus.html">Menus & Orders</a>
+			    <a href="special_order.html">Special Order</a>
+			    <a href="special.html">Special Events</a>
+			    <a href="hour.html">Hours & Locations</a>
+			    <a class="selected" href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+	<div id="content">
+
+	<h3>Contact</h3>
+
+
+
+		<p>Please fill out the below visitor inquiry form.</p>
+
+	  <!-- <form> -->
+	<form action="mailto:infoneeded@butterwoodBC.com" method="post" enctype="text/plain">
+	  <fieldset>
+		  <!-- <legend>Tell me more about yourself</legend> -->
+		  <label for="uname">Name: *</label> <br/>
+		  <input type="text" id="uname" name="uname" size="20" maxlength ="250" required><br/><br/>
+		  <label for="zipcode">Zipcode:</label> <br>
+		  <input type="zip" id="zipcode" name="zipcode" value="" size="5" Placeholder = 15213 maxlength ="5" pattern = "\d{5}"><br/><br/>
+
+		  <label for="email">Email: *</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+
+	      <label fr="inquiry">Inquiry:</label> <br/>
+		  <textarea id="inquiry" name="inquiry" value="Type your Message" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+
+
+		  <label for="attention">What is your favorite item?</label>
+		  <select name="attention">
+			  <option value="cupcakes" selected>Cupcakes</option>
+			  <option value="cakes">Cakes</option>
+			  <option value="wholePies">Whole Pies</option>
+			  <option value="other">Other</option><br/>
+		  </select><br/><br/>
+
+
+		  <label>Please indicate if you want to subscribe:</label><br/>
+		  <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+
+	  </fieldset>
+
+	  	  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Submit">
+
+	  </form>
+
+	</div> <!-- Close content -->
+
+
+	<div id="sidebar">
+		<br><br>
+		<img src="images/logo.jpeg" alt="Logo" class="responsive" />
+		 <br>
+		 <img src="images/event4.jpg" alt="Smiley face" class="responsive" />
+		 <p>
+		 Curabitur condimentum justo libero. Nunc pretium rutrum lacus,
+		 vitae suscipit erat condimentum ac.
+		 Suspendisse euismod leo vitae tempus consectetur.
+		 Integer tellus massa, hendrerit ac tellus ut,
+		 feugiat tristique mi. Donec dictum, urna eu dapibus dapibus,
+		 ex nisl maximus tellus, vel pharetra lacus enim eget augue.
+		 Quisque vitae venenatis ipsum. Duis a efficitur massa.</p>
+
+	</div> <!--Close sidebar  -->
+
+
+	<footer>
+		<a href="mailto:infoneeded@butterwoodBC.com"><img src="images/gmail.png"></a>
+		<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank"><img src="images/internet.png" /></a>
+		<a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png" /></a>
+		<a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png" /></a>
+		<a href="https://www.pittsburghmagazine.com/Best-of-the-Burgh-Blogs/Eat-Street/November-2015/Butterwood-Bake-Consortium-Takes-the-Cake" target="_blank"><img src="images/article.png" /></a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div> <!-- Close container -->
+</body>
+
+</html>

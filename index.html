@@ -1,0 +1,147 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Aiden Lee">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, website">
+	<meta name="description" content="ButterWood Bake Consortium Website">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>
+    <link rel="icon" href="images/icon.gif" type="image/gif" sizes="18x18">
+
+
+	<!-- External Links to CSS files-->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <!-- New external Links to CSS files for smartphones -->
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/stylesmobile.css" />
+
+
+	<!-- External Links to JS files-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is new tag in HTML 5 -->
+				<h1>Butterwood Bake Consortium</h1>
+			</header>
+			<nav>
+			    <a class="selected" href="index.html">Home</a> <!-- Navigation to other pages in our website - these are relative links -->
+			    <a href="menus.html">Menus & Orders</a>
+			    <a href="special_order.html">Special Order</a>
+			    <a href="special.html">Special Events</a>
+			    <a href="hour.html">Hours & Locations</a>
+			    <a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+
+	<div id="content">
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container"><p></p>
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <img src="images/cake1.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/cake2.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/cake3.jpg" style="width:100%">
+		  </div>
+
+
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+
+		<div id="bio">
+			<p>Opened in October 2015, Butterwood Bake Consortium is a
+				dessert cafe located in the Lawrenceville neighbourhood of
+				Pittsburgh, Pennsylvania. The bakery features cake and pie by the
+				slice, custom whole cakes, as well as local KLVN coffee and
+				espresso! They bake with organic Daisy Flour, Wholesome
+				Sweeteners Organic Evaporated Cane Juice, and local, organic eggs.</p>
+		</div>
+
+
+
+	</div> <!-- Close content -->
+
+
+	<div id="sidebar">
+		<p> </p>
+
+		<img src="images/logo.jpeg" alt="Logo" class="responsive" />
+		 <p>
+		 Curabitur condimentum justo libero. Nunc pretium rutrum lacus,
+		 vitae suscipit erat condimentum ac. Suspendisse euismod leo vitae
+		 tempus consectetur. Integer tellus massa, hendrerit ac tellus ut,
+		 feugiat tristique mi. Donec dictum, urna eu dapibus dapibus,
+		 ex nisl maximus tellus, vel pharetra lacus enim eget augue.
+		 Quisque vitae venenatis ipsum. Duis a efficitur massa.</p>
+
+	</div> <!--Close sidebar  -->
+
+
+
+	<footer>
+		<a href="mailto:infoneeded@butterwoodBC.com"><img src="images/gmail.png"></a>
+		<a href="https://www.thebutterwoodbakeconsortium.com" target="_blank"><img src="images/internet.png" /></a>
+		<a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/facebook.png" /></a>
+		<a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/instagram.png" /></a>
+		<a href="https://www.pittsburghmagazine.com/Best-of-the-Burgh-Blogs/Eat-Street/November-2015/Butterwood-Bake-Consortium-Takes-the-Cake" target="_blank"><img src="images/article.png" /></a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+	</div>
+
+
+
+</body>
+
+</html>
+
+
+<!-- Javascript  It is cited from W3School-->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
